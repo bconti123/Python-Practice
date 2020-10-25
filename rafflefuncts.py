@@ -6,7 +6,7 @@ def reverse(s):
 	if s == "":
 		return s
 	else:
-		return reverse(s[1:]) + s[0]
+		return reverse(s[1:])
 
 ############################ add_user function ###############################
 
@@ -52,3 +52,10 @@ def print_list(local_hash):
 	# print out to the screen each key & value pair from hash
 	print(local_hash)
 	return local_hash
+
+
+def start_raffle(local_hash):
+    
+    # print out to the screen who is winner
+    name = random.choice(username in local_hash)
+    print(random.choice(word))
