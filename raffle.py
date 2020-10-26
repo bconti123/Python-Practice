@@ -1,4 +1,5 @@
 import rafflefuncts
+import random
 
 add_user = rafflefuncts.add_user
 del_user = rafflefuncts.del_user
