@@ -20,3 +20,14 @@ print('Is 415-555-4242 a phone number?')
 print(isPhoneNumber('415-555-4242'))
 print('Is Moshi moshi a phone number?')
 print(isPhoneNumber('Moshi moshi'))
+
+print('What is your phone number?')
+number = input("Enter number: ")
+print(number)
+
+if (isPhoneNumber(number) == True):
+    print('SUCCESS!')
+else:
+    print('FAILED')
+    
+
