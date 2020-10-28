@@ -1,3 +1,5 @@
+### https://cloud.google.com/compute/docs/tutorials/python-guide ####
+
 def main(project, bucket, zone, instance_name, wait=True):
     compute = googleapiclient.discovery.build('compute', 'v1')
 
@@ -124,7 +126,7 @@ def create_instance(compute, project, zone, name, bucket):
         zone=zone,
         body=config).execute()
     
-
+## DELETE
 def delete_instance(compute, project, zone, name):
     return compute.instances().delete(
         project=project,
