@@ -23,7 +23,7 @@ fh.seek(0)
 #transfer file line by line into dictionary (hash) with a while loop, splitting the username and password by the delimiter character ":"
 lines = fh.readlines()
 for line in lines:
-	username = linearray[0]
+	hash[line] = username
 	
 # outer loop until user quits
 while(choice != '5'):

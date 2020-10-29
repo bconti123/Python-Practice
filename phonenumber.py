@@ -23,11 +23,13 @@ print(isPhoneNumber('Moshi moshi'))
 
 print('What is your phone number?')
 number = input("Enter number: ")
-print(number)
 
-if (isPhoneNumber(number) == True):
-    print('SUCCESS!')
-else:
+while (isPhoneNumber(number) == False):
+    print(number)
     print('FAILED')
+    return number
+    else: (isPhoneNumber(number) == True):
+        print('SUCCESS')
+        break
     
-
+    
