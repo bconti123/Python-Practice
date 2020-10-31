@@ -10,10 +10,16 @@ subtotal = 0.0
 tax = 0.0
 total = 0.0
 
+a=input("enter the items and costs ( diffrent item to be seperated by ',' ")
+a=a.split(",")
+
+
 
 while (not finished):
-    prompt = "Enter amount for item #" + str(item_no + 1) + "(Type -1 to done or type any number to enter): $"
-    price = float(input(prompt))
+    for i in a:
+        print(i)
+        prompt = "Enter amount for item #" + str(item_no + 1) + "(Type -1 to done or type any number to enter): $"
+        price = float(input(prompt))
     if (price == -1):
         finished = True
     else:
