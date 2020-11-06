@@ -37,9 +37,11 @@ print("SUBTOTAL: ${:.2f}".format(subtotal))
 print("TAX: ${:.2f}".format(tax))
 print("TOTAL: ${:.2f}".format(total))
 
-print"You want to split bills with your friends?"
-divide = float(input(num_split))
+print("You want to split bills with your friends?")
+num_split = ("Enter values : ")
+divide = int(input(num_split))
 split_bill = total / divide
+print("TOTAL: " + int{divide} + " OF YOU EACH PAY ${:.2f}".format(split_bill))
 print("=======================================================================")
 
 print (" Publix Receipt")
