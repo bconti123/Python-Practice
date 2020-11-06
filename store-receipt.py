@@ -10,6 +10,7 @@ subtotal = 0.0
 tax = 0.0
 total = 0.0
 
+
 a=input("enter the items and costs ( diffrent item to be seperated by ',' ")
 a=a.split(",")
 
@@ -36,6 +37,9 @@ print("SUBTOTAL: ${:.2f}".format(subtotal))
 print("TAX: ${:.2f}".format(tax))
 print("TOTAL: ${:.2f}".format(total))
 
+print"You want to split bills with your friends?"
+divide = float(input(num_split))
+split_bill = total / divide
 print("=======================================================================")
 
 print (" Publix Receipt")
